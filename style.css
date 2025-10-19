@@ -43,9 +43,9 @@ h1, h2 {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center; /* по горизонтали */
-    align-items: flex-start; /* текст выше */
-    padding-top: 180px;      /* отступ сверху */
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 180px;      
     text-align: center;
 }
 
@@ -57,12 +57,12 @@ h1, h2 {
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.9); /* светлый полупрозрачный фон */
-    max-width: 1200px;   /* ограничиваем ширину */
-    margin: 20px auto;  /* по центру страницы */
+    background-color: rgba(255, 255, 255, 0.9); 
+    max-width: 1200px;   
+    margin: 20px auto;  
     padding: 20px 30px;
-    border-radius: 10px; /* закруглённые углы */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* лёгкая тень */
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 /* Картинки */
 img {
@@ -72,7 +72,7 @@ img {
     margin: 0 auto;
 }
 
-/* Таблицы */
+/* Таблица */
 table {
     width: 90%;
     margin: 20px auto;
