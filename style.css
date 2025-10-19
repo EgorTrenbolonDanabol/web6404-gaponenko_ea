@@ -1,0 +1,116 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #34495e;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Главная страница с фоновым изображением */
+.hero {
+    height: 100vh;
+    background-image: url('images/gym.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: flex-start; /* текст выше */
+    padding-top: 180px;      /* отступ сверху */
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    padding: 0 20px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9); /* светлый полупрозрачный фон */
+    max-width: 1200px;   /* ограничиваем ширину */
+    margin: 20px auto;  /* по центру страницы */
+    padding: 20px 30px;
+    border-radius: 10px; /* закруглённые углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* лёгкая тень */
+}
+/* Картинки */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Таблицы */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+th {
+    background-color: #1abc9c;
+    color: white;
+}
+
+td.left {
+    text-align: left;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.right {
+    text-align: right;
+}
+
+/* Разные селекторы */
+p.intro {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
