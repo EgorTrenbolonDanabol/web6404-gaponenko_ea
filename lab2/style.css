@@ -21,7 +21,7 @@ nav {
 
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* _ */
     margin: 0 15px;
     font-weight: bold;
 }
@@ -34,16 +34,12 @@ h1, h2 {
     text-align: center;
 }
 
-/* Главная страница с фоновым изображением */
 .hero {
     height: 100vh;
     background-image: url('images/gym.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
     padding-top: 180px;      
     text-align: center;
 }
@@ -52,26 +48,24 @@ h1, h2 {
     color: white;
     font-size: 48px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-    padding: 0 20px;
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: white; 
     max-width: 1200px;   
     margin: 20px auto;  
     padding: 20px 30px;
     border-radius: 10px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 10px black; 
 }
-/* Картинки */
-img {
+
+main img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* Таблица */
 table {
     width: 90%;
     margin: 20px auto;
@@ -100,16 +94,7 @@ td.right {
     text-align: right;
 }
 
-/* Разные селекторы */
-p.intro {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
 ul li {
     margin-bottom: 10px;
 }
 
-footer p {
-    font-size: 14px;
-}
