@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="workouts.html">Тренировки</a>
+    <a href="nutrition.html">Питание</a>
+    <a href="about.html">О сайте</a>
+</nav>
+    
+
+<header>
+    <h1>Отправка данных</h1>
+</header>
+
+<form class="form" id="userForm">
+    <div class="form__group">
+        <label for="username">Логин</label>
+        <input type="text" id="username" name="username" class="form__input" required placeholder="Введите логин">
+    </div>
+
+
+    <div class="form__group">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" class="form__input" required placeholder="Пароль">
+    </div>
+
+    <div class="form__group">
+        <label><input type="checkbox" id="agree" name="agree"> Согласен на обработку данных</label>
+    </div>
+
+
+    <button type="submit" id="submitBtn" class="form__submit">Отправить на сервер</button>
+    <div id="formMessage" aria-live="polite" style="margin-top:12px"></div>
+</form>
+
+<script src="form.js"></script>
+
+<footer>
+    <p>© 2025 Тренировки и питание</p>
+</footer>
+
+</body>
+</html>

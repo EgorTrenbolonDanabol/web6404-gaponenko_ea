@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="workouts.html">Тренировки</a>
+    <a href="nutrition.html">Питание</a>
+    <a href="about.html">О сайте</a>
+</nav>
+    
+<header>
+    <h1>Программа тренировок на неделю</h1>
+</header>
+<main>
+    <h2>Upper/Lower сплит</h2>
+    <table>
+        <tr>
+            <th>День</th>
+            <th>Программа</th>
+            <th>Упражнение</th>
+            <th>Подходы</th>
+            <th>Повторения</th>
+        </tr>
+        <tr>
+            <td class="center" rowspan="3">Понедельник</td>
+            <td class="center" rowspan="3">Upper</td>
+            <td class="left">Жим лежа</td>
+            <td class="center">4</td>
+            <td class="right">8-10</td>
+        </tr>
+        <tr>
+            <td class="left">Подтягивания</td>
+            <td class="center">4</td>
+            <td class="right">Макс</td>
+        </tr>
+        <tr>
+            <td class="left">Жим гантелей сидя</td>
+            <td class="center">3</td>
+            <td class="right">10-12</td>
+        </tr>
+
+        <tr>
+            <td class="center" rowspan="3">Вторник</td>
+            <td class="center" rowspan="3">Lower</td>
+            <td class="left">Приседания со штангой</td>
+            <td class="center">4</td>
+            <td class="right">8-10</td>
+        </tr>
+        <tr>
+            <td class="left">Румынская тяга</td>
+            <td class="center">4</td>
+            <td class="right">10-12</td>
+        </tr>
+        <tr>
+            <td class="left">Выпады</td>
+            <td class="center">3</td>
+            <td class="right">12</td>
+        </tr>
+
+        <tr>
+            <td class="center" rowspan="3">Среда</td>
+            <td class="center" rowspan="3">Upper</td>
+            <td class="left">Тяга штанги к поясу</td>
+            <td class="center">4</td>
+            <td class="right">8-10</td>
+        </tr>
+        <tr>
+            <td class="left">Жим гантелей лежа</td>
+            <td class="center">3</td>
+            <td class="right">10-12</td>
+        </tr>
+        <tr>
+            <td class="left">Разведения гантелей в стороны</td>
+            <td class="center">3</td>
+            <td class="right">12-15</td>
+        </tr>
+
+        <tr>
+            <td class="center" rowspan="3">Четверг</td>
+            <td class="center" rowspan="3">Lower</td>
+            <td class="left">Становая тяга</td>
+            <td class="center">4</td>
+            <td class="right">6-8</td>
+        </tr>
+        <tr>
+            <td class="left">Приседания с гантелями</td>
+            <td class="center">3</td>
+            <td class="right">10-12</td>
+        </tr>
+        <tr>
+            <td class="left">Подъемы на носки</td>
+            <td class="center">3</td>
+            <td class="right">15-20</td>
+        </tr>
+
+        <tr>
+            <td class="center" rowspan="3">Пятница</td>
+            <td class="center" rowspan="3">Upper</td>
+            <td class="left">Подтягивания</td>
+            <td class="center">4</td>
+            <td class="right">Макс</td>
+        </tr>
+        <tr>
+            <td class="left">Жим штанги лежа</td>
+            <td class="center">4</td>
+            <td class="right">8-10</td>
+        </tr>
+        <tr>
+            <td class="left">Бицепс с гантелями</td>
+            <td class="center">3</td>
+            <td class="right">12</td>
+        </tr>
+
+        <tr>
+            <td class="center" rowspan="2">Суббота</td>
+            <td class="center" rowspan="2">Lower</td>
+            <td class="left">Приседания со штангой</td>
+            <td class="center">4</td>
+            <td class="right">8-10</td>
+        </tr>
+        <tr>
+            <td class="left">Румынская тяга</td>
+            <td class="center">3</td>
+            <td class="right">10-12</td>
+        </tr>
+
+        <tr>
+            <td class="center">Воскресенье</td>
+            <td class="center">Отдых</td>
+            <td class="left">—</td>
+            <td class="center">—</td>
+            <td class="right">—</td>
+        </tr>
+
+    </table>
+</main>
+
+<!-- Feedback form and data table -->
+<section id="feedbackSection" style="padding:20px; max-width:800px; margin:auto">
+    <h2>Оставьте отзыв о программе</h2>
+    <form id="feedbackForm">
+        <div class="form__group">
+            <label for="fbName">Имя</label><br>
+            <input type="text" id="fbName" name="name" placeholder="Ваше имя" required style="width:100%; max-width:400px">
+            <div id="fbNameHint" aria-live="polite" style="color:#d00; font-size:0.9em; margin-top:6px"></div>
+        </div>
+        <div class="form__group" style="margin-top:12px">
+            <label for="fbReview">Отзыв</label><br>
+            <textarea id="fbReview" name="review" rows="4" placeholder="Расскажите про программу" required style="width:100%; max-width:600px"></textarea>
+            <div id="fbReviewHint" aria-live="polite" style="color:#d00; font-size:0.9em; margin-top:6px"></div>
+        </div>
+        <div style="margin-top:12px">
+            <button type="submit" id="fbSubmit" disabled>Отправить отзыв</button>
+            <span id="fbMessage" aria-live="polite" style="margin-left:12px"></span>
+        </div>
+    </form>
+
+    <h3 style="margin-top:24px">Данные с сервера (GET http://localhost:8000/home)</h3>
+    <div id="homeFetchError" aria-live="polite" style="color:rgb(226, 50, 173); margin-bottom:8px"></div>
+    <table id="homeDataTable" border="1" style="border-collapse:collapse; width:100%; max-width:800px">
+        <thead>
+            <tr>
+                <th style="padding:10px">ID</th>
+                <th style="padding:6px">Напоминание</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td colspan="3" style="padding:6px">Данные не загружены</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<script src="workouts-form.js"></script>
+<footer>
+    <p>© 2025 Тренировки и питание</p>
+</footer>
+
+
+</body>
+</html>
